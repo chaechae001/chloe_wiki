@@ -179,7 +179,8 @@ updateViewportLabel();
 
 **Q1. `document`는 어디에 연결되어 있나요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 브라우저 전역 객체인 `window`의 `document` 프로퍼티이며 현재 HTML 문서를 나타냅니다.
 
@@ -187,7 +188,8 @@ updateViewportLabel();
 
 **Q2. Node.js에서 `window`가 없을 수 있는 이유는 무엇인가요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 `window`는 JavaScript 언어 자체가 아니라 브라우저 창 환경이 제공하는 객체이기 때문입니다.
 
@@ -195,7 +197,8 @@ updateViewportLabel();
 
 **Q3. 초기 화면 상태에도 반응형 함수를 호출해야 하는 이유는 무엇인가요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 `resize`는 크기가 바뀔 때만 발생하므로 페이지가 처음 열린 크기에 맞는 상태를 별도로 설정해야 합니다.
 
@@ -204,4 +207,3 @@ updateViewportLabel();
 ## 한 줄 정리
 
 > 실행 환경의 객체 책임을 구분하면 브라우저 상태와 HTML 문서를 올바른 API로 다룰 수 있습니다.
-

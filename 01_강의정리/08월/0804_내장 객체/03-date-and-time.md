@@ -200,7 +200,8 @@ function stopClock() {
 
 **Q1. `Date`끼리 뺄셈하면 내부적으로 어떤 값이 사용되나요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 각 시점을 나타내는 밀리초 타임스탬프 차이가 사용됩니다.
 
@@ -208,7 +209,8 @@ function stopClock() {
 
 **Q2. 시계 렌더링에서 매번 새 `Date`를 만드는 이유는 무엇인가요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 기존 `Date` 객체는 생성 당시 시점을 나타내므로 현재 시각을 다시 읽으려면 새 객체가 필요합니다.
 
@@ -216,7 +218,8 @@ function stopClock() {
 
 **Q3. 타이머 ID를 `null`로 되돌리는 이유는 무엇인가요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 코드가 현재 타이머 실행 여부를 정확히 판단하고 이후 다시 시작할 수 있게 하기 위해서입니다.
 
@@ -225,4 +228,3 @@ function stopClock() {
 ## 한 줄 정리
 
 > 날짜·시간 코드는 유효한 시점, 타임스탬프 계산, 표시 형식, 타이머 정리를 분리해야 안정적입니다.
-

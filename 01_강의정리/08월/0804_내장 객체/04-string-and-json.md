@@ -186,7 +186,8 @@ API 요청·응답, `localStorage`, 설정 파일, 메시지 큐처럼 데이터
 
 **Q1. `trim()`을 호출한 원본 변수는 자동으로 바뀌나요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 아닙니다. 새 문자열을 반환하므로 결과를 저장하거나 다음 메서드에 연결해야 합니다.
 
@@ -194,7 +195,8 @@ API 요청·응답, `localStorage`, 설정 파일, 메시지 큐처럼 데이터
 
 **Q2. JSON 문자열에 함수가 포함될 수 있나요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 JSON 데이터 타입에는 함수가 없으며 일반적인 직렬화에서 함수 값은 보존되지 않습니다.
 
@@ -202,7 +204,8 @@ JSON 데이터 타입에는 함수가 없으며 일반적인 직렬화에서 함
 
 **Q3. `Date`를 직렬화한 뒤 파싱하면 무엇이 되나요?**
 
-<details><summary>답</summary>
+<details>
+<summary>답</summary>
 
 일반적으로 날짜 표현 문자열이 되며 필요하면 파싱 후 `new Date(value)`로 다시 만들어야 합니다.
 
@@ -211,4 +214,3 @@ JSON 데이터 타입에는 함수가 없으며 일반적인 직렬화에서 함
 ## 한 줄 정리
 
 > 문자열은 반환값을 받아 가공하고, JSON은 파싱한 객체를 수정한 뒤 다시 직렬화해야 안전합니다.
-
